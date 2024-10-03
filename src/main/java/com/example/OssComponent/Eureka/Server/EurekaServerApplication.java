@@ -1,4 +1,4 @@
-package com.example.OssComponent.Eureka.Service;
+package com.example.OssComponent.Eureka.Server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

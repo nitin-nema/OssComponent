@@ -1,0 +1,69 @@
+OSS - open source software
+MIT License
+GPL License
+Apache License
+
+Hystrix- fault tolerance()
+ circut breaker
+ 
+ states-
+ closed - request flow normally to the service
+ opened - request will be immediaately blocked and fallback logic is applied
+ half-open- limited number of request
+ 
+ RTT/TTFB, ping, trace route, New Relic, Datadog, Prometheus, JMeter
+ Solutionss- indexing, caching, load balancing, CDN(cloudfare, akamai) ,optmised code(async things), edge computing
+   compression(Gzip, Brotli), DNS resoultion optimization
+ 
+ Hystix helps
+ 1. circut breaker
+ 2. fallback method - default response, retierive cach datam redirect to alternative service, graceful degradation
+ 3. timeout and fail fast mechanism
+ 4. Bulkhead and resource isolation
+ 5. Request caching -
+ 6. Monitiring
+ 7. Command pattern(HystrixCommand and HystrixObservable Command)
+ 
+ ___
+ hystric execuation isolation 
+ 1. thread isolation
+ 2. Semaphore isolation
+ 
+ Problem-
+  processing bank
+  
+ --
+ Zuul
+ 
+Advantages
+1. dyanmic routing (url, cookies, header etc)
+2. load balancing (Ribbon)
+3. Service Dicovery (Eurkea)- pending
+4. APi aggreation
+5. Cross cutting concern
+6. Hystrix(fault tolderance)
+7. easy intergation with Spring cloud config/security
+8. secuity - ssl termination, IP whitelisting 
+
+___
+Service disvovery
+Client - netflix ribbon
+
+Server - zuul, sprin cloud
+
+Service regisrty - Eureka(Netflix), ZooKeeper(Apache), Consul(HashiCrop)
+
+Process---
+Service registration- IP adress, port , serive name, health status
+Service health -check
+Service Discovery
+Load balancing
+
+______
+Ribbon process flow--
+
+Client -> Product Service --(resttemplate(@LoadBalanced))--> Eureka Server 
+--->Ribbon Load balance--> user service(server instance B) 
+-> response sent through riboon -> product service(retun to client)
+
+

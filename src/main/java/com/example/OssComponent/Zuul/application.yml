@@ -6,6 +6,7 @@ zuul:
     user-service:
       path: /users/**
       url: http://localhost:8081
+
     product-service:
       path: /products/**
       url: http://localhost:8082
