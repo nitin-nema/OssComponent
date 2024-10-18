@@ -10,3 +10,8 @@ zuul:
     product-service:
       path: /products/**
       url: http://localhost:8082
+
+      order-service:
+        path:/order/**
+        url:http://localhost:8083
+

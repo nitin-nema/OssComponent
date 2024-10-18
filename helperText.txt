@@ -17,7 +17,7 @@ Hystrix- fault tolerance()
  
  Hystix helps
  1. circut breaker
- 2. fallback method - default response, retierive cach datam redirect to alternative service, graceful degradation
+ 2. fallback method - default response, retierive cach data redirect to alternative service, graceful degradation
  3. timeout and fail fast mechanism
  4. Bulkhead and resource isolation
  5. Request caching -
